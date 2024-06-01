@@ -1,0 +1,179 @@
+/* phần nút trang */
+button {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 10px;
+    color: white;
+    text-shadow: 2px 2px rgb(116, 116, 116);
+    text-transform: uppercase;
+    border: solid 2px black;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 17px;
+    background-color: hsl(49deg 98% 60%);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+button:active {
+    transform: scale(.9);
+    transition: all 100ms ease;
+}
+
+button svg {
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+.play {
+    transition: all .5s ease;
+    transition-delay: 300ms;
+}
+
+button:hover svg {
+    transform: scale(3) translate(50%);
+}
+
+.now {
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all .5s ease;
+    z-index: 2;
+}
+
+button:hover .now {
+    transform: translateX(10px);
+    transition-delay: 300ms;
+}
+
+button:hover .play {
+    transform: translateX(200%);
+    transition-delay: 300ms;
+}
+
+
+
+
+   /* *************dấu tích*********** */
+   .container {
+    --input-focus: #f02d2d;
+    --input-out-of-focus: #ccc;
+    --bg-color: #fff;
+    --bg-color-alt: #666;
+    --main-color: #323232;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .checkmark {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--input-out-of-focus);
+    transition: all 0.3s;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: var(--input-focus);
+  }
+  
+  .checkmark:after {
+    content: "";
+    width: 7px;
+    height: 15px;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    display: none;
+    border: solid var(--bg-color);
+    border-width: 0 2.5px 2.5px 0;
+    transform: rotate(45deg);
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  };
+
+
+
+/* CSS cho checkbox container */
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 30px; /* Khoảng cách giữa checkbox và chữ */
+  margin-bottom: 15px; /* Khoảng cách giữa các checkbox */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+/* CSS cho đánh dấu (checkmark) */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px; /* Kích thước của checkbox */
+  width: 25px;
+  background-color: #ccc; /* Màu nền của checkbox chưa được chọn */
+  border: 1px solid #000; /* Viền của checkbox */
+}
+
+/* CSS cho đánh dấu (checkmark) khi được tích chọn */
+.checkbox-container input[type="checkbox"]:checked + .checkmark {
+  background-color: #2196F3; /* Màu nền của checkbox khi được chọn */
+}
+
+/* CSS cho dấu tích (tick) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* CSS cho dấu tích (tick) khi được tích chọn */
+.checkbox-container input[type="checkbox"]:checked + .checkmark:after {
+  display: block;
+}
+
+/* CSS cho hình dấu tích (tick) */
+.checkbox-container input[type="checkbox"]:checked + .checkmark:after {
+  left: 9px; /* Điều chỉnh vị trí dấu tích */
+  top: 5px; /* Điều chỉnh vị trí dấu tích */
+  width: 5px; /* Điều chỉnh kích thước của dấu tích */
+  height: 10px; /* Điều chỉnh kích thước của dấu tích */
+  border: solid #fff; /* Màu của dấu tích */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); /* Góc quay của dấu tích */
+}      
+
+  /* CSS cho ô vuông */
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* Màu nền */
+    color: #fff; /* Màu văn bản */
+    border: none; /* Loại bỏ đường viền */
+    cursor: pointer; /* Biến con trỏ thành dấu tay khi di chuột vào ô vuông */
+  }
+
+  /* CSS cho ô vuông khi di chuột qua */
+  .square:hover {
+    background-color: #2980b9; /* Màu nền thay đổi khi di chuột qua */
+  }

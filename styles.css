@@ -1,0 +1,214 @@
+body{
+    
+    margin: 0;
+    /* background: linear-gradient(135deg, #bc86f9, #0bd3c2); */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 0 auto; /* Canh giữa trang giấy A4 */
+}
+
+
+
+table, th, td {
+   
+    border:1px solid black;
+    font-size: 24px;
+  
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    text-decoration: underline; 
+    color: #ff0000;
+}
+h2 {
+
+    font-size: 30px;
+    text-decoration: underline;
+    color: #ff0000;
+}
+h3 {
+
+    font-size: 28px;
+    text-decoration: underline;
+    color: #0022ff;
+}
+h4 {
+  font-size: 27px;
+  text-decoration: underline;
+  color: #ff6200;
+}
+p {
+    font-size: 24px;
+}
+b{
+  font-size: 24px;
+}
+i{
+  font-size: 24px;
+}
+u{
+  font-size: 24px;
+}
+ul{
+    font-size: 24px;
+}
+ol{
+  font-size: 24px;
+}
+
+
+/* CSS cho hình ảnh phóng to */
+#zoomedImage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+#zoomedImage img {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highlighted {
+    color: blue; /* Đặt màu cho từ được tô màu */
+}
+.do{
+    color: red; /*Đặt màu cho từ được tô màu*/
+}
+.xanh{
+    color: blue;/*Đặt màu cho từ được tô màu*/
+}
+.hong{
+    color: #f200ff;
+}
+.indam{   
+   font-weight: bold;   
+}
+.vang {
+    color: rgb(255, 204, 0); /* Màu vàng đậm */
+}
+
+.cam{
+    color: orange;
+}
+.luc{
+    color: rgb(4, 255, 0);
+}
+.tim{
+  color: #9900ff;
+}
+.green {
+  color: green;
+}
+.rating {
+    
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #000000;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #0080ff;
+    transition: color 0.3s;
+  }
+
+ label{
+    font-size: 24px;
+ }
+
+ .anh-giua {
+    margin: 0 auto;
+    display: block;
+  };
+  
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .mau-nen {
+    background-color: lightskyblue;
+  }
+
+  .mau-nen-tim {
+    background-color: rgb(217, 135, 250);
+  }
+  .mau-nen-hong {
+    background-color: rgb(248, 174, 227);
+  }
+  .mau-nen-cam {
+    background-color: rgb(255, 207, 117);
+  }
+  .mau-nen-xanh {
+    background-color: rgb(117, 225, 255);
+  }
+  .mau-nen-luc {
+    background-color: rgb(117, 255, 207);
+  }
+  .mau-nen-xam {
+    background-color: rgb(153, 170, 167);
+  }
+  .mau-nen-do {
+    background-color: rgb(219, 3, 3);
+  } 
+  .mau-nen-nhat {
+    background-color: rgb(143, 143, 135);
+  }
+
+
+.can-giua   {
+  text-align: center;
+}
+
+
+  /* khung cho người dùng nhập */
+  /* .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  } */
